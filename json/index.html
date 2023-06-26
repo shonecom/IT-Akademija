@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        let json = '{"countries": [{"countryCode": "sr","name": "Serbia","capital": "Belgrade","description": "Serbia is....."},{"countryCode": "fr","name": "France","capital": "Paris","description": "France is....."}]}';
+
+        let data = JSON.parse(json);
+
+        for (let i = 0; i < data.countries.length; i++) {
+            
+            document.body.innerHTML += '<h2>' + data.countries[i].name + '</h2>'
+            document.body.innerHTML += '<p>Capital: ' + data.countries[i].capital + '</p>'
+            document.body.innerHTML += '<p>Description: ' + data.countries[i].description + '</p>'
+            
+        };*/
+
+        /*
+        let json = '[{"username":"user1","password":"gf^^$%bb%4","dateTimeCreated":"1587290213334"},{"username":"user2","password":"*(&%$$fff33ff","dateTimeCreated":"1382290314543"}]';
+        
+        let data = JSON.parse(json, (key, value) => {
+
+            if (key === 'dateTimeCreated') {
+                value = new Date(parseInt(value));
+            }
+
+            return value;
+        });*/
+
+        /*let person = {};
+        person.id = 34;
+        person.firstName = "Ben";
+        person.lastName = "Lord";
+        person.address = {};
+        person.address.street = "Bos En Lommerweg 65";
+        person.address.zipCode = "1008 AG";
+        person.address.city = "Amsterdam";
+        person.adult = true;
+
+        /*function replacer(key, value) {
+ 
+            if (key === "id") {
+                return undefined;
+            } else if (key === "adult") {
+                return (value === true) ? "yes" : "no";
+            }
+
+            return value;
+        }
+
+        person.address.toJSON = function (name) {
+                return {
+                    street: this.street,
+                    zip_code: this.zipCode,
+                    city: this.city
+                }
+        }
+
+        person.toJSON = function(name){
+            return {
+                first_name: this.firstName,
+                last_name: this.lastName,
+                address: this.address
+            }
+        }
+
+        let replacer = ["first_name", "last_name", "address", "street"];*/
+
+        /*let json = JSON.stringify(person, null, "\t");
+
+        console.log(json)*/
+
+        var test = JSON.stringify(NaN);
+
+    </script>
+</body>
+</html>
